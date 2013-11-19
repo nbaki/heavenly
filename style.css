@@ -1,0 +1,10 @@
+/*
+Theme Name:     child_heavenly
+Description:    Child theme of Heavely WordPress theme.
+Author:         Nasem Baki
+Template:       heavenly
+
+(optional values you can add: Theme URI, Author URI, Version)
+*/
+
+@import url("../heavenly/style.css");

@@ -8,3 +8,44 @@ Template:       heavenly
 */
 
 @import url("../heavenly/style.css");
+
+a {
+	color: #65d615;
+}
+
+a:link {
+	text-decoration: underline;
+}
+
+a:hover {
+	background-color: #65d615;
+	color: white;
+}
+
+a:visited {
+	font-weight: bold;
+}
+
+ul.checklist li {
+	list-style-type: none;
+	padding: 5px;
+	background-image: url(images/empty_checkbox.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 14px;
+	margin-bottom: 0px;
+
+}
+
+ul.checklist li p {
+	margin-left: 20px;
+}
+
+img#checklist-wrap {
+	float: right;	
+	padding: 0;
+	max-width: 100%;
+	margin: 5px;
+	display: inline;
+}
+

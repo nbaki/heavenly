@@ -11,9 +11,9 @@
             '@color': '<?php echo heavenly_get_theme_opts('color_scheme','#3399ff'); ?>'
         });
     </script>
+    <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery-1.3.2.min.js"></script>
     <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery.slidingGallery-1.2.js"></script>
     <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery.slidingGallery-1.2.min.js"></script>
-    <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery-1.3.2.min.js"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

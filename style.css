@@ -9,20 +9,20 @@ Template:       heavenly
 
 @import url("../heavenly/style.css");
 
-a {
+a.content-link {
 	color: #65d615;
 }
 
-a:link {
+a.content-link:link {
 	text-decoration: underline;
 }
 
-a:hover {
+a.content-link:hover {
 	background-color: #65d615;
 	color: white;
 }
 
-a:visited {
+a.content-link:visited {
 	font-weight: bold;
 }
 
@@ -49,3 +49,12 @@ img#checklist-wrap {
 	display: inline;
 }
 
+#service-table td{
+    background-color: #5a5a5a;
+    padding: 10px;
+    border: 10px solid white;
+    text-align: center;
+}
+
+#service-content {
+}

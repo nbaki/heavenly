@@ -8,7 +8,6 @@ Template:       heavenly
 */
 
 @import url("../heavenly/style.css");
-
 a.content-link {
 	color: #65d615;
 }
@@ -24,6 +23,12 @@ a.content-link:hover {
 
 a.content-link:visited {
 	font-weight: bold;
+}
+a.content-link:focus {
+    background: red;
+}
+a.indicator {
+    background:  red;
 }
 
 ul.checklist li {
@@ -48,13 +53,13 @@ img#checklist-wrap {
 	margin: 5px;
 	display: inline;
 }
-
-#service-table td{
+#service-table-area {
+    width: 100%;
+}
+#service-table td.service-nav{
     background-color: #5a5a5a;
+    border-radius: 100px;
     padding: 10px;
     border: 10px solid white;
     text-align: center;
-}
-
-#service-content {
 }

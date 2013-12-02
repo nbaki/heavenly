@@ -1,5 +1,5 @@
 <?php
-
+add_filter('show_admin_bar', '__return_false');
 function get_childTheme_url() {
     return dirname( get_bloginfo('stylesheet_url') );
 }

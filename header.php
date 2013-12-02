@@ -27,6 +27,8 @@
     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="nav-area">
+          <div id="logo-area-left"><a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a></div>
+          <div id="logo-area-right"><a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a></div>
       <div class="container">
 
         <div class="navbar">
@@ -37,7 +39,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a>
+
+            <div id="brand-name-area">
+                <a class="brand" id="brand-title" href="<?php echo esc_url(home_url('/')); ?>">Kind</a>
+                <br /><span id="tech-services">Technology Services</span>
+            </div>
+
             <div class="nav-collapse collapse">
               <?php
 

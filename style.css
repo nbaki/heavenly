@@ -14,7 +14,7 @@ Template:       heavenly
     }
 }
 .page-container {
-    background: #8c8c8c;
+    /*background: #8c8c8c;*/
     background-size: cover;
 }
 .content-container {
@@ -76,4 +76,22 @@ img#checklist-wrap {
         display: none;
     }
 
+}
+
+.services {
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+.wpcf7 {
+    width: 100px;
+}
+#contact-info {
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}
+#contact-pic {
+    position: absolute;
+    top: 150px;
+    right: 200px;
 }

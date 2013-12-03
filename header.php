@@ -26,7 +26,7 @@
     ================================================== -->
     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="nav-area">
+      <div class="nav-area" style="background-image: url('http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/blackboard-background.jpg');">
           <div id="logo-area-left"><a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a></div>
           <div id="logo-area-right"><a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a></div>
       <div class="container">

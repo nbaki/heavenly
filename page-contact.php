@@ -20,24 +20,15 @@ get_header();
                                 <h1 class="entry-title"><?php the_title(); ?></h1>
                                 <div class="entry-content">
                                     <?php the_content(); ?>
-                                    <div id="contact-info">
-                                        <table id="conctact-info-table">
-                                            <tr>
-                                                <td>Kind Technology Services, LLC</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Location:</td>
-                                                <td>Gloucester County, New Jersey 08012</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Phone:</td>
-                                                <td>TBA</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Email:</td>
-                                                <td>support@kindtechnj.com</td>
-                                            </tr>
-                                        </table>
+                                    <div id="mobile-contact-info">
+                                    <fieldset>
+                                        <legend>General Info</legend>
+                                        <ul>
+                                            <li>Email: support@kindtechnj.com</li>
+                                            <li>Phone: TBA</li>
+                                            <li>Location: Northeast New Jersey</li>
+                                        </ul>
+                                    </fieldset>
                                     </div>
                                 </div>
                             </div>

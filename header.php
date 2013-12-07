@@ -65,6 +65,8 @@
                         ?>
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+            <?php endif; ?>
         </div><!-- /.navbar -->
 
       </div> <!-- /.container -->

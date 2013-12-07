@@ -14,4 +14,16 @@ function getPageContent($id) {
     return $content;
 }
 
+if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+        'name' => 'Navigation Widget Area',
+        'id'   => 'nav-widgets',
+        'description'   => 'Navigation Widget Area',
+        'before_widget' => '<div class="nav-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>'
+    ));
+}
+
 ?>

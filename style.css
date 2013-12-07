@@ -9,6 +9,7 @@ Template:       heavenly
 
 @import url("../heavenly/style.css");
 
+/** BODY **/
 /* Mobile Layouts */
 
 @media (min-width: 1000px) {
@@ -186,6 +187,10 @@ table.service-table tr {
     font-size: 20px;
 }
 
+/** FOOTER **/
+.footer {
+    border-bottom: 5px solid black;
+}
 .footer .container {
     height: auto;
 }
@@ -201,13 +206,28 @@ table.service-table tr {
 }
 
 .footer-nav ul li {
+    margin-right: 4px;
     display: inline;
 }
 .footer-nav ul li a {
+    text-decoration: underline;
     display: inline;
 }
 .nav-area-footer {
     width: 200px;
+}
+.span0 {
+    width: 50px;
+}
+.footer-table {
+    text-align: center;
+    font-size: 10px;
+    border: none;
+}
+.footer * {
+    vertical-align: bottom;
+    margin-bottom: 0;
+    border-bottom: 0px;
 }
 @media (max-width: 1000px) {
     .nav-area {

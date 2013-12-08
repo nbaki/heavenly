@@ -229,6 +229,12 @@ table.service-table tr {
     margin-bottom: 0;
     border-bottom: 0px;
 }
+
+.breadcrumbs a {
+    display: inline;
+    /*width: 200px;*/
+}
+
 @media (max-width: 1000px) {
     .nav-area {
         height: auto;

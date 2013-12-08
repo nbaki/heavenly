@@ -8,6 +8,12 @@ get_header();
 
     <div class="page-container">
         <div class="content-container">
+            <div class="breadcrumbs">
+                <?php if(function_exists('bcn_display'))
+                {
+                    bcn_display();
+                }?>
+            </div>
             <div class="row-fluid">
                 <div class="span12">
                     <div  id="single-post post-<?php the_ID(); ?>" <?php post_class(); ?>>

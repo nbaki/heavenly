@@ -8,6 +8,12 @@ get_header();
 <?php }?>
 <div class="page-container">
 <div class="content-container">
+    <div class="breadcrumbs">
+        <?php if(function_exists('bcn_display'))
+        {
+            bcn_display();
+        }?>
+    </div>
 <div class="row-fluid">
 
 

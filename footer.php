@@ -14,7 +14,7 @@
         <table class="footer-table">
             <tr>
                 <td>
-                    <?php if(!dynamic_sidebar('footer1')) echo ""; ?>
+<!--                    --><?php //if(!dynamic_sidebar('footer1')) echo ""; ?>
                 </td>
                 <td class="footer-nav"><?php
                     $args = array(

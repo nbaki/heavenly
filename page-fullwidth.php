@@ -9,7 +9,7 @@ get_header();
 <div class="page-container">
 <div class="content-container">
     <div class="breadcrumbs">
-        <?php if(function_exists('bcn_display'))
+        <?php if(function_exists('bcn_display') && !is_page('Home'))
         {
             bcn_display();
         }?>

@@ -27,8 +27,8 @@
     <div class="navbar-wrapper">
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="nav-area">
-          <div id="logo-area-left"><a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a></div>
-          <div id="logo-area-right"><a class="logo" href="<?php echo esc_url(home_url('/')); ?>"><?php heavenly_logo(); ?></a></div>
+<!--          <div id="logo-area-left"><a class="logo" href="--><?php //echo esc_url(home_url('/')); ?><!--">--><?php //heavenly_logo(); ?><!--</a></div>-->
+<!--          <div id="logo-area-right"><a class="logo" href="--><?php //echo esc_url(home_url('/')); ?><!--">--><?php //heavenly_logo(); ?><!--</a></div>-->
       <div class="container">
 
         <div class="navbar">

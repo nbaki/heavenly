@@ -111,6 +111,20 @@ table.service-table tr {
     float: left;
     /*background-color: blue;*/
 }
+.left-content, .right-content {
+    padding: 20px;
+    border: 1px solid green;
+}
+
+.left-content h4, .right-content h4 {
+    color: #444444;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
+    text-align: center;
+}
+
+.left-content p, .right-content p {
+    font-size: 12px;
+}
 .even-row p {
     /*float: right;*/
 }

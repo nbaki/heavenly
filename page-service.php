@@ -59,40 +59,64 @@ get_header();
                             <h1 class="entry-title"><?php the_title(); ?></h1>
                             <table class="service-table">
                                 <tr class="even-row">
-                                    <td class="left-image"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" /></td>
-                                    <td class="right-content" id="design">
-                                        <h4><?php echo get_the_title(236); ?></h4>
-                                        <p>
-                                            <?php echo getPageContent(236); ?>
-                                        </p>
+                                    <td>
+                                        <div class="left-image">
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" />
+                                        </div>
+                                    </td>
+                                    <td id="design" colspan="5">
+                                        <div class="right-content">
+                                            <h4><?php echo get_the_title(236); ?></h4>
+                                            <p>
+                                                <?php echo getPageContent(236); ?>
+                                            </p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="odd-row">
-                                    <td class="left-content" id="dev">
-                                        <h4><?php echo get_the_title(234); ?></h4>
-                                        <p>
-                                            <?php echo getPageContent(234); ?>
-                                        </p>
+                                    <td id="dev">
+                                        <div class="left-content">
+                                            <h4><?php echo get_the_title(234); ?></h4>
+                                            <p>
+                                                <?php echo getPageContent(234); ?>
+                                            </p>
+                                        </div>
                                     </td>
-                                    <td class="right-image"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" /></td>
+                                    <td>
+                                        <div class="right-image">
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" />
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr class="even-row">
-                                    <td class="left-image"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" /></td>
-                                    <td class="right-content" id="branding">
-                                        <h4><?php echo get_the_title(238); ?></h4>
-                                        <p>
-                                            <?php echo getPageContent(238); ?>
-                                        </p>
+                                    <td>
+                                        <div class="left-image">
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/marketing-touch_300x200_WEB.png" />
+                                        </div>
+                                    </td>
+                                    <td id="branding">
+                                        <div class="right-content">
+                                            <h4><?php echo get_the_title(238); ?></h4>
+                                            <p>
+                                                <?php echo getPageContent(238); ?>
+                                            </p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="odd-row">
-                                    <td class="left-content" id="hosting">
-                                        <h4><?php echo get_the_title(242); ?></h4>
-                                        <p>
-                                            <?php echo getPageContent(242); ?>
-                                        </p>
+                                    <td id="hosting">
+                                        <div class="left-content">
+                                            <h4><?php echo get_the_title(242); ?></h4>
+                                            <p>
+                                                <?php echo getPageContent(242); ?>
+                                            </p>
+                                        </div>
                                     </td>
-                                    <td class="right-image"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" /></td>
+                                    <td>
+                                        <div class="right-image">
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" />
+                                        </div>
+                                    </td>
                                 </tr>
                             </table>
 

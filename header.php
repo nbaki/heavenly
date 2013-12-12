@@ -45,32 +45,35 @@
                 <br /><span id="tech-services">Technology Services</span>
             </div>
 
-            <div class="nav-collapse collapse">
-              <?php
-
-     
-                        $args = array(
-                        'theme_location' => 'primary',
-                        'depth' => 3,
-                        'container' => false,
-                        'menu_class' => 'nav',
-                        'fallback_cb' => false,
-                        'walker' => new heavenly_bootstrap_walker_nav_menu()
-                        );
-
-                         
-                        wp_nav_menu($args);
-
-                         
-                        ?>
-            </div><!--/.nav-collapse -->
+<!--            <div class="nav-collapse collapse">-->
+<!--              --><?php
+//
+//
+//                        $args = array(
+//                        'theme_location' => 'primary',
+//                        'depth' => 3,
+//                        'container' => false,
+//                        'menu_class' => 'nav',
+//                        'fallback_cb' => false,
+//                        'walker' => new heavenly_bootstrap_walker_nav_menu()
+//                        );
+//
+//
+//                        wp_nav_menu($args);
+//
+//
+//                        ?>
+<!--            </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
-            <?php endif; ?>
+            <div id="search-bar-area">
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+                <?php endif; ?>
+            </div>
         </div><!-- /.navbar -->
 
       </div> <!-- /.container -->
-     </div> 
+     </div>
+
       <?php if(is_archive()): ?>
       <div class="container">
       <div class="row-fluid"><div class="span12 arc-header">
@@ -97,4 +100,22 @@
       ?>
       
     </div><!-- /.navbar-wrapper -->
-        
+<div class="nav-bar">
+    <?php
+
+
+    $args = array(
+        'theme_location' => 'primary',
+        'depth' => 3,
+        'container' => false,
+        'menu_class' => 'nav',
+        'fallback_cb' => false,
+        'walker' => new heavenly_bootstrap_walker_nav_menu()
+    );
+
+
+    wp_nav_menu($args);
+
+
+    ?>
+</div>

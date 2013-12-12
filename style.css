@@ -25,6 +25,9 @@ Template:       heavenly
     #logo-area-right {
         display: none;
     }
+    #search-bar-area {
+        display: none;
+    }
 }
 
 @media (max-width: 1350px) {
@@ -138,15 +141,22 @@ table.service-table tr {
 }
 
 /* Contact Page */
+
+.wpcf7  {
+    width: 50%;
+    float: left;
+}
+
 #contact-info {
     position: absolute;
-    top: 400px;
-    right: 450px;
+    top: 500px;
+    right: 550px;
 }
 #contact-pic {
-    position: absolute;
-    top: 150px;
-    right: 540px;
+    /*float: right;*/
+    /*position: absolute;*/
+    /*top: 150px;*/
+    /*right: 540px;*/
 }
 
 /* Logo area */
@@ -167,6 +177,22 @@ table.service-table tr {
 }
 
 /* Navigation area */
+
+.nav-bar {
+    font-size: 20px;
+    text-align: center;
+    /*background-color: gray;*/
+}
+
+.nav > li {
+    margin-right: 20px;
+    display: inline;
+}
+
+.nav > li > a {
+    display: inline;
+}
+
 .nav-widget {
     float: right;
     display: inline-block;

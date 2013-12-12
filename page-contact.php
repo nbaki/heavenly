@@ -26,16 +26,6 @@ get_header();
                                 <h1 class="entry-title"><?php the_title(); ?></h1>
                                 <div class="entry-content">
                                     <?php the_content(); ?>
-                                    <div id="mobile-contact-info">
-                                    <fieldset>
-                                        <legend>General Info</legend>
-                                        <ul>
-                                            <li>Email: support@kindtechnj.com</li>
-                                            <li>Phone: TBA</li>
-                                            <li>Location: Northeast New Jersey</li>
-                                        </ul>
-                                    </fieldset>
-                                    </div>
                                 </div>
                             </div>
                         <?php endwhile; ?>

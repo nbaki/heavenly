@@ -61,7 +61,7 @@ get_header();
                                 <tr class="even-row">
                                     <td>
                                         <div class="left-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" />
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-design-map_350x226.png" />
                                         </div>
                                     </td>
                                     <td id="design" colspan="5">
@@ -84,7 +84,7 @@ get_header();
                                     </td>
                                     <td>
                                         <div class="right-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" />
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-development-collage_350x233.png" />
                                         </div>
                                     </td>
                                 </tr>
@@ -114,7 +114,7 @@ get_header();
                                     </td>
                                     <td>
                                         <div class="right-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/placeholder.jpg" />
+                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/globe_hosting_300x248.png" />
                                         </div>
                                     </td>
                                 </tr>

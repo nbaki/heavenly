@@ -20,86 +20,10 @@
 </head>
 <body <?php body_class(); ?>>
 
- 
-     
-<!-- NAVBAR
-    ================================================== -->
-    <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="nav-area">
-<!--          <div id="logo-area-left"><a class="logo" href="--><?php //echo esc_url(home_url('/')); ?><!--">--><?php //heavenly_logo(); ?><!--</a></div>-->
-<!--          <div id="logo-area-right"><a class="logo" href="--><?php //echo esc_url(home_url('/')); ?><!--">--><?php //heavenly_logo(); ?><!--</a></div>-->
-      <div class="container">
+ <header id="banner-header">
+    <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services Banner" width="100%" />
+ </header>
 
-        <div class="navbar">
-          <div class="navbar-inner clean">
-
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-
-            <div id="brand-name-area">
-                <a class="brand" id="brand-title" href="<?php echo esc_url(home_url('/')); ?>">Kind</a>
-                <br /><span id="tech-services">Technology Services</span>
-            </div>
-
-<!--            <div class="nav-collapse collapse">-->
-<!--              --><?php
-//
-//
-//                        $args = array(
-//                        'theme_location' => 'primary',
-//                        'depth' => 3,
-//                        'container' => false,
-//                        'menu_class' => 'nav',
-//                        'fallback_cb' => false,
-//                        'walker' => new heavenly_bootstrap_walker_nav_menu()
-//                        );
-//
-//
-//                        wp_nav_menu($args);
-//
-//
-//                        ?>
-<!--            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-            <div id="search-bar-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
-                <?php endif; ?>
-            </div>
-        </div><!-- /.navbar -->
-
-      </div> <!-- /.container -->
-     </div>
-
-      <?php if(is_archive()): ?>
-      <div class="container">
-      <div class="row-fluid"><div class="span12 arc-header">
-      <h1 class="entry-title">
-                        <?php if ( is_day() ) : ?>                            
-                        <?php echo get_the_date(); ?>    
-                        <?php elseif ( is_month() ) : ?>
-                        Monthly Archives: <?php echo get_the_date( 'F Y' ); ?>                        
-                        <?php elseif ( is_year() ) : ?>
-                        <?php echo get_the_date( 'Y' ); ?>                            
-                        <?php elseif(is_category()) : ?>
-                        <?php echo single_cat_title( '', false ); ?>
-                        <?php elseif(is_tag()) : ?> 
-                        <?php echo single_tag_title(); ?>
-                        <?php else : the_post(); ?> 
-                        <?php echo get_the_author(); ?>
-                        <?php rewind_posts(); endif; ?>
-      </h1>
-      </div></div></div>
-      <?php endif; ?>
-      
-      <?php
-          if(is_front_page()) get_template_part('homepage','top');
-      ?>
-      
-    </div><!-- /.navbar-wrapper -->
 <div class="nav-bar">
     <?php
 
@@ -118,4 +42,11 @@
 
 
     ?>
+    <div id="search-bar-area">
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+        <?php endif; ?>
+    </div>
 </div>
+<?php
+if(is_front_page()) get_template_part('homepage','top');
+?>

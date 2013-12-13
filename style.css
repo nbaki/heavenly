@@ -178,7 +178,16 @@ table.service-table tr {
 
 /* Navigation area */
 
+.nav {
+    width: auto;
+}
+
+#search-bar-area {
+    float: right;
+}
+
 .nav-bar {
+    height: 60px;
     font-size: 20px;
     text-align: center;
     /*background-color: gray;*/

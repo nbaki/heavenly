@@ -14,6 +14,12 @@ get_header();
             bcn_display();
         }?>
     </div>
+    <?php if (!is_page('Home')) : ?>
+    <div id="search-bar-area">
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+        <?php endif; ?>
+    </div>
+    <?php endif; ?>
 <div class="row-fluid">
 
 

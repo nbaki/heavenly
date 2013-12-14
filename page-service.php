@@ -7,12 +7,6 @@ get_header();
 ?>
     <script>
         $(document).ready(function(){
-            $(".live-tile").liveTile({
-                playOnHover: true,
-                onHoverDelay: 200,
-                delay: 1000000,
-                flipListOnHover: true
-            });
             $('.mark-link').click(function() {
                 $('.services').hide();
                 $('#service-content-mobile').css('border-top', '1px solid black');
@@ -57,6 +51,10 @@ get_header();
                             </ul>
                         </div>
                         <div class="entry-content">
+                            <div id="search-bar-area">
+                                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+                                <?php endif; ?>
+                            </div>
                             <h1 class="entry-title"><?php the_title(); ?></h1>
                             <table class="service-table">
                                 <tr class="even-row">

@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 <script>
     $(document).ready(function() {
-//        $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services'></li>");
+        $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
 
     });
 </script>
@@ -26,6 +26,7 @@
  </header>
 
 <div class="nav-bar">
+<div class="btn-navbar"></div>
     <?php
 
 
@@ -43,10 +44,13 @@
 
 
     ?>
-    <div id="search-bar-area">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
-        <?php endif; ?>
-    </div>
+    <?php if (is_page('Home')) : ?>
+
+    <?php endif; ?>
+</div>
+<div id="search-bar-area" style="margin-right: 10px;">
+    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+    <?php endif; ?>
 </div>
 <?php
 if(is_front_page()) get_template_part('homepage','top');

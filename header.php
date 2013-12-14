@@ -5,8 +5,6 @@
 <title><?php wp_title(); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet/less" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.less" />
-    <link href="<?php echo get_childTheme_url(); ?>/styles/MetroJs.css" rel="stylesheet" />
-    <link href="<?php echo get_childTheme_url(); ?>/styles/MetroJs.min.css" rel="stylesheet" />
     <script src="<?php echo get_template_directory_uri(); ?>/js/less.js" type="text/javascript"></script>
     <script type="text/javascript">
         less.modifyVars({
@@ -14,14 +12,17 @@
         });
     </script>
     <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery-1.3.2.min.js"></script>
-    <script src="<?php echo get_childTheme_url(); ?>/scripts/MetroJs.js"></script>
-    <script src="<?php echo get_childTheme_url(); ?>/scripts/MetroJs.min.js"></script>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<script>
+    $(document).ready(function() {
+//        $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services'></li>");
 
+    });
+</script>
  <header id="banner-header">
-    <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services Banner" width="100%" />
+    <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services" width="100%" />
  </header>
 
 <div class="nav-bar">

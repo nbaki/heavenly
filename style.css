@@ -10,7 +10,9 @@ Template:       heavenly
 @import url("../heavenly/style.css");
 
 /** BODY **/
-/* Mobile Layouts */
+/* MOBILE LAYOUTS
+ ================================
+ */
 
 @media (min-width: 1000px) {
     .mobile-tiles {
@@ -22,6 +24,9 @@ Template:       heavenly
 }
 
 @media (max-width: 450px) {
+    .nav > li {
+        padding: 0;
+    }
     #logo-area-right {
         display: none;
     }
@@ -61,7 +66,9 @@ Template:       heavenly
     background-color: white;
 }
 
-/* Links */
+/* LINKS
+ ==================================
+ */
 a.content-link {
 	color: #65d615;
 }
@@ -83,16 +90,6 @@ a.content-link:focus {
 }
 
 /* List Items */
-ul.checklist li {
-	list-style-type: none;
-	padding: 5px;
-	background-image: url(images/empty_checkbox.jpg);
-	background-repeat: no-repeat;
-	background-position: 0px 5px;
-	padding-left: 14px;
-	margin-bottom: 0px;
-
-}
 
 ul.checklist li p {
 	margin-left: 20px;
@@ -106,14 +103,13 @@ img#checklist-wrap {
 	display: inline;
 }
 
-/* Services Content */
+/* SERVICES PAGE
+ ============================================
+ */
 table.service-table tr {
     border-bottom: 1px solid #65d615;
 }
-.even-row img {
-    float: left;
-    /*background-color: blue;*/
-}
+
 .left-content, .right-content {
     padding: 20px;
     border: 1px solid green;
@@ -140,7 +136,9 @@ table.service-table tr {
     /*background-color: red;*/
 }
 
-/* Contact Page */
+/* CONTACT PAGE
+ ===============================================
+ */
 
 .wpcf7  {
     width: 50%;
@@ -148,57 +146,50 @@ table.service-table tr {
 }
 
 #contact-info {
-    position: absolute;
-    top: 500px;
-    right: 550px;
+    float: right;
 }
 #contact-pic {
-    /*float: right;*/
+    float: right;
     /*position: absolute;*/
     /*top: 150px;*/
     /*right: 540px;*/
 }
 
-/* Logo area */
-#logo-area-left {
-    top: 150px;
-    position: absolute;
-    left: 100px;
-}
-
-#logo-area-right {
-    top: 150px;
-    position: absolute;
-    right: 100px;
-}
-
-.logo {
-    opacity: 0.95;
-}
-
-/* Navigation area */
+/* NAVIGATION
+=====================================
+*/
 
 .nav {
     width: auto;
 }
 
 #search-bar-area {
+    margin-top: 5px;
     float: right;
 }
 
 .nav-bar {
-    height: 60px;
-    font-size: 20px;
+    border-radius: 4px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    font-size: 14px;
     text-align: center;
-    /*background-color: gray;*/
+    /*background-color: black;*/
 }
 
+.nav li:after {
+}
 .nav > li {
-    margin-right: 20px;
+    width: auto;
+    padding: 20px;
     display: inline;
 }
 
 .nav > li > a {
+    padding: 15px;
+    border-radius: 7px;
     display: inline;
 }
 
@@ -236,7 +227,9 @@ table.service-table tr {
     font-size: 20px;
 }
 
-/** FOOTER **/
+/** FOOTER
+=============================================
+**/
 .footer {
     border-bottom: 5px solid black;
 }
@@ -279,12 +272,24 @@ table.service-table tr {
     border-bottom: 0px;
 }
 
+/* MISCELLANEOUS
+================================================
+*/
+
+.wp-caption {
+    border: 0;
+}
+
 .breadcrumbs a {
     display: inline;
     /*width: 200px;*/
 }
 
 @media (max-width: 1000px) {
+    .nav > li > a {
+        padding: 0;
+        font-size: 12px;
+    }
     .nav-area {
         height: auto;
     }
@@ -306,4 +311,5 @@ table.service-table tr {
     #mobile-contact-info {
         display: none;
     }
+
 }

@@ -1,6 +1,7 @@
 <?php
 /*
  * Template Name: Service Template
+ * Author: Nasem Baki
  */
 get_header();
 ?>
@@ -60,11 +61,11 @@ get_header();
                             <table class="service-table">
                                 <tr class="even-row">
                                     <td>
-                                        <div class="left-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-design-map_350x226.png" />
+                                        <div>
+                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-design-map_350x226.png" />
                                         </div>
                                     </td>
-                                    <td id="design" colspan="5">
+                                    <td id="design">
                                         <div class="right-content">
                                             <h4><?php echo get_the_title(236); ?></h4>
                                             <p>
@@ -73,25 +74,25 @@ get_header();
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="odd-row">
+                                <tr class="even-row">
+                                    <td>
+                                        <div>
+                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-development-collage_350x233.png" />
+                                        </div>
+                                    </td>
                                     <td id="dev">
-                                        <div class="left-content">
+                                        <div class="right-content">
                                             <h4><?php echo get_the_title(234); ?></h4>
                                             <p>
                                                 <?php echo getPageContent(234); ?>
                                             </p>
                                         </div>
                                     </td>
-                                    <td>
-                                        <div class="right-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-development-collage_350x233.png" />
-                                        </div>
-                                    </td>
                                 </tr>
                                 <tr class="even-row">
                                     <td>
-                                        <div class="left-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/marketing-touch_300x200_WEB.png" />
+                                        <div>
+                                            <img class="service-img" width="100%" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/marketing-touch_300x200_WEB.png" />
                                         </div>
                                     </td>
                                     <td id="branding">
@@ -103,18 +104,18 @@ get_header();
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="odd-row">
+                                <tr class="even-row">
+                                    <td>
+                                        <div>
+                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/globe_hosting_300x248.png" />
+                                        </div>
+                                    </td>
                                     <td id="hosting">
-                                        <div class="left-content">
+                                        <div class="right-content">
                                             <h4><?php echo get_the_title(242); ?></h4>
                                             <p>
                                                 <?php echo getPageContent(242); ?>
                                             </p>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="right-image">
-                                            <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/globe_hosting_300x248.png" />
                                         </div>
                                     </td>
                                 </tr>
@@ -144,9 +145,7 @@ get_header();
 
                         <div class="services" id="hosting-content" style="display: none;">
                             <h4><?php echo get_the_title(242); ?></h4>
-                            <p>
                                 <?php echo getPageContent(242); ?>
-                            </p>
                         </div>
                     </div>
                 </div>

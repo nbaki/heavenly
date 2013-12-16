@@ -42,20 +42,20 @@ get_header();
             <div class="row-fluid">
                 <div class="span12">
                     <div  id="single-post post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <div class="mobile-tiles">
-                            <ul>
-                                <li><a class="design-link content-link" href="#">Web Design</a></li>
-                                <li><a class="dev-link content-link" href="#">Web Development</a></li>
-                                <li><a class="mark-link content-link" href="#">Web Branding & Marketing</a></li>
-                                <li><a class="host-link content-link" href="#">Web Hosting</a></li>
-                            </ul>
-                        </div>
                         <div class="entry-content">
                             <div id="search-bar-area">
                                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
                                 <?php endif; ?>
                             </div>
                             <h1 class="entry-title"><?php the_title(); ?></h1>
+                            <div class="mobile-tiles">
+                                <ul>
+                                    <li><a class="design-link content-link" href="#">Web Design</a></li>
+                                    <li><a class="dev-link content-link" href="#">Web Development</a></li>
+                                    <li><a class="mark-link content-link" href="#">Web Branding & Marketing</a></li>
+                                    <li><a class="host-link content-link" href="#">Web Hosting</a></li>
+                                </ul>
+                            </div>
                             <table class="service-table">
                                 <tr class="even-row">
                                     <td>

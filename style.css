@@ -15,6 +15,12 @@ Template:       heavenly
  */
 
 @media (min-width: 1000px) {
+    #mobile-process-flow {
+        display: none;
+    }
+    #mobile-checklist-guy {
+        display: none;
+    }
     .mobile-tiles {
         display: none;
     }
@@ -35,14 +41,9 @@ Template:       heavenly
     }
 }
 
-@media (max-width: 1350px) {
-    #logo-area-left {
-        display: none;
-    }
-}
-
 @media (max-width: 979px) {
     .mobile-tiles {
+        margin-left: 17px;
         display: block;
     }
     .service-table {
@@ -69,6 +70,11 @@ Template:       heavenly
 /* LINKS
  ==================================
  */
+
+/*.nav > li > a {*/
+    /*background-color: green;*/
+/*}*/
+
 a.content-link {
 	color: #65d615;
 }
@@ -112,13 +118,12 @@ table.service-table tr {
 
 .left-content, .right-content {
     padding: 20px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .left-content h4, .right-content h4 {
-    color: #444444;
-    text-shadow: -1px -1px 1px #000, 1px 1px 1px #ccc;
-    text-align: center;
+    color: #ffffff;
+    background-color: #196063;
 }
 
 .left-content p, .right-content p {
@@ -236,8 +241,12 @@ table.service-table tr {
     display: inline;
 }
 .footer-nav ul li a {
+    font-size: 12px;
     text-decoration: underline;
     display: inline;
+}
+.footer-nav ul li a:hover {
+
 }
 .nav-area-footer {
     width: 200px;
@@ -270,14 +279,28 @@ table.service-table tr {
 }
 
 @media (max-width: 1000px) {
+    #process-flow {
+        display: none;
+    }
+    #checklist-guy {
+        display: none;
+    }
     .nav-area {
         height: auto;
     }
 }
 @media (max-width: 700px) {
+    #mobile-checklist-guy {
+        display: block;
+    }
+    #mobile-process-flow {
+        text-align: center;
+        display: block;
+    }
     .nav-bar {
-        margin-left: 10px;
-        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .nav > li {
@@ -311,3 +334,8 @@ table.service-table tr {
     }
 
 }
+
+h1 {
+    text-align: center;
+}
+

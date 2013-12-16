@@ -48,12 +48,6 @@
 
     <?php endif; ?>
 </div>
-<?php if (is_page('Home')) : ?>
-<div id="search-bar-area" style="margin-right: 10px;">
-    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
-    <?php endif; ?>
-</div>
-<?php endif; ?>
 <?php
 if(is_front_page()) get_template_part('homepage','top');
 ?>

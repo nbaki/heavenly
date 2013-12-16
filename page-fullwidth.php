@@ -4,8 +4,19 @@ Template Name: Full Width
 */
 get_header();
  ?>
-<?php if (is_page('services')) { ?>
-<?php }?>
+<?php if (is_page('Client Checklist')) : ?>
+    <script>
+        $(document).ready(function () {
+            $('#checklist-opening').after("<img id='mobile-checklist-guy' src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/checklist-guy_400x359.png' alt='checklist-guy' />");
+        });
+    </script>
+<?php elseif (is_page('Our Process')) : ?>
+    <script>
+        $(document).ready(function () {
+            $('#process-opening').before("<div id='mobile-process-flow' style='clear: both;'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/process-flow.jpg' alt='process-flow' width='200' height='300' /></div>");
+        });
+    </script>
+<?php endif; ?>
 <div class="page-container">
 <div class="content-container">
     <div class="breadcrumbs">

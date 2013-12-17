@@ -27,7 +27,7 @@ get_header();
 
                             <div <?php post_class('post'); ?>>
                                 <div class="clear"></div>
-                                <h1 class="entry-title"><?php the_title(); ?></h1>
+                                <h1 id="contact-title" class="entry-title"><?php the_title(); ?></h1>
                                 <div class="entry-content">
                                     <?php the_content(); ?>
                                 </div>

@@ -18,7 +18,16 @@
 <script>
     $(document).ready(function() {
         $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
+        $('.nav:last').append("<li id='last-logo'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>" );
 
+        $('#mobile-nav-button').click(function () {
+            var nav_display = $('.nav').css('display');
+            if (nav_display == 'none') {
+                $('.nav').show();
+            } else {
+                $('.nav').hide();
+            }
+        });
     });
 </script>
  <header id="banner-header">
@@ -26,7 +35,9 @@
  </header>
 
 <div class="nav-bar">
-<div class="btn-navbar"></div>
+<div class="btn-navbar">
+    <a id="mobile-nav-button" href="#"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/greenbuttonlines.png" alt="Mobile Navigation" /></a>
+</div>
     <?php
 
 
@@ -44,9 +55,6 @@
 
 
     ?>
-    <?php if (is_page('Home')) : ?>
-
-    <?php endif; ?>
 </div>
 <?php
 if(is_front_page()) get_template_part('homepage','top');

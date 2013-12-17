@@ -7,13 +7,20 @@ get_header();
 <?php if (is_page('Client Checklist')) : ?>
     <script>
         $(document).ready(function () {
-            $('#checklist-opening').after("<img id='mobile-checklist-guy' src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/checklist-guy_400x359.png' alt='checklist-guy' />");
+            $('#checklist-opening').after("<div id='mobile-process-flow'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/checklist-guy_400x359.png' alt='checklist-guy' /><p class='wp-caption-text'>Have you checked everything?</p></div>");
         });
     </script>
 <?php elseif (is_page('Our Process')) : ?>
     <script>
         $(document).ready(function () {
             $('#process-opening').before("<div id='mobile-process-flow' style='clear: both;'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/process-flow.jpg' alt='process-flow' width='200' height='300' /></div>");
+        });
+    </script>
+<?php elseif(is_page('About Us')) : ?>
+    <script>
+        $(document).ready(function () {
+            $('.content-container').css("background", "url('http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Greenleaves_Right_opactity.png')");
+//            $().css();
         });
     </script>
 <?php endif; ?>
@@ -24,13 +31,14 @@ get_header();
         {
             bcn_display();
         }?>
-    </div>
-    <?php if (!is_page('Home')) : ?>
-    <div id="search-bar-area">
-        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+        <?php if (!is_page('Home')) : ?>
+            <div id="search-bar-area">
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+                <?php endif; ?>
+            </div>
         <?php endif; ?>
     </div>
-    <?php endif; ?>
+
 <div class="row-fluid">
 
 
@@ -45,7 +53,13 @@ while(have_posts()): the_post(); ?>
  
 <div <?php post_class('post'); ?>>
 <div class="clear"></div>
-<h1 class="entry-title"><?php the_title(); ?></h1>
+<h1 class="entry-title">
+    <?php if (!is_page('Home')) {
+        the_title();
+    } else { ?>
+        Welcome to Kind Technology Services!
+    <?php } ?>
+</h1>
 <div class="entry-content">
 <?php the_content(); ?>
 </div>

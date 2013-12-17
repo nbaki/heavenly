@@ -49,7 +49,7 @@ get_header();
                             </div>
                             <h1 class="entry-title"><?php the_title(); ?></h1>
                             <div class="mobile-tiles">
-                                <ul>
+                                <ul class="mobile-tiles">
                                     <li><a class="design-link content-link" href="#">Web Design</a></li>
                                     <li><a class="dev-link content-link" href="#">Web Development</a></li>
                                     <li><a class="mark-link content-link" href="#">Web Branding & Marketing</a></li>

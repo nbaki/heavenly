@@ -10,21 +10,21 @@ Template:       heavenly
 @import url("../heavenly/style.css");
 
 /** BODY **/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1:not(#contact-title) {
+    text-align: center;
+}
+
+
 /* MOBILE LAYOUTS
  ================================
  */
 
 @media (min-width: 1000px) {
-    #mobile-process-flow {
-        display: none;
-    }
-    #mobile-checklist-guy {
-        display: none;
-    }
-    .mobile-tiles {
-        display: none;
-    }
-    #service-content-mobile {
+    #mobile-process-flow, #mobile-checklist-guy, .mobile-tiles, #service-content-mobile, .btn-navbar {
         display: none;
     }
 }
@@ -33,9 +33,6 @@ Template:       heavenly
     .nav > li {
         padding: 0;
     }
-    #logo-area-right {
-        display: none;
-    }
     #search-bar-area {
         display: none;
     }
@@ -43,9 +40,14 @@ Template:       heavenly
 
 @media (max-width: 979px) {
     .mobile-tiles {
-        margin-left: 17px;
+        list-style-type: none;
+        text-align: center;
         display: block;
     }
+    .mobile-tiles > li {
+        padding: 5px;
+    }
+
     .service-table {
         display: none;
     }
@@ -71,9 +73,9 @@ Template:       heavenly
  ==================================
  */
 
-/*.nav > li > a {*/
-    /*background-color: green;*/
-/*}*/
+.current-menu-item > a {
+    background-color: #3FAD21 !important;
+}
 
 a.content-link {
 	color: #65d615;
@@ -90,9 +92,6 @@ a.content-link:hover {
 
 a.content-link:visited {
 	font-weight: bold;
-}
-a.content-link:focus {
-    background: red;
 }
 
 /* List Items */
@@ -117,28 +116,26 @@ table.service-table tr {
 }
 
 .left-content, .right-content {
+    font-size: 30px;
     padding: 20px;
     /*border: 1px solid green;*/
 }
 
 .left-content h4, .right-content h4 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #ffffff;
     background-color: #196063;
+    text-align: center;
+    padding: 10px;
 }
 
 .left-content p, .right-content p {
-    font-size: 12px;
-}
-.even-row p {
-    /*float: right;*/
+    font-size: 15px;
 }
 
-.odd-row p {
-    /*float: left;*/
-}
-.odd-row img {
-    float: right;
-    /*background-color: red;*/
+#hosting-list {
+    list-style-type: square;
+    margin-left: 50px;
 }
 
 /* CONTACT PAGE
@@ -150,14 +147,8 @@ table.service-table tr {
     float: left;
 }
 
-#contact-info {
+#contact-info, #contact-pic {
     float: right;
-}
-#contact-pic {
-    float: right;
-    /*position: absolute;*/
-    /*top: 150px;*/
-    /*right: 540px;*/
 }
 
 /* NAVIGATION
@@ -184,8 +175,6 @@ table.service-table tr {
     /*background-color: black;*/
 }
 
-.nav li:after {
-}
 .nav > li {
     width: auto;
     padding: 20px;
@@ -193,6 +182,7 @@ table.service-table tr {
 }
 
 .nav > li > a {
+    font-size: 18px;
     padding: 10px;
     border-radius: 7px;
     display: inline;
@@ -206,9 +196,6 @@ table.service-table tr {
     display: none;
 }
 .nav-area {
-    /*width: 80%;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
     height: 120px;
 }
 
@@ -240,20 +227,16 @@ table.service-table tr {
     margin-right: 4px;
     display: inline;
 }
-.footer-nav ul li a {
-    font-size: 12px;
-    text-decoration: underline;
-    display: inline;
-}
-.footer-nav ul li a:hover {
 
+.footer_menu > li > a {
+    text-decoration: underline;
+    font-size: 14px;
+    padding: 2px;
 }
 .nav-area-footer {
     width: 200px;
 }
-.span0 {
-    width: 50px;
-}
+
 .footer-table {
     text-align: center;
     font-size: 10px;
@@ -279,17 +262,18 @@ table.service-table tr {
 }
 
 @media (max-width: 1000px) {
-    #process-flow {
+    #process-flow, #checklist-guy, .nav-area, #last-logo {
         display: none;
-    }
-    #checklist-guy {
-        display: none;
-    }
-    .nav-area {
-        height: auto;
     }
 }
 @media (max-width: 700px) {
+    .btn-navbar {
+        clear: both;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+    }
     #mobile-checklist-guy {
         display: block;
     }
@@ -326,16 +310,10 @@ table.service-table tr {
     }
 }
 @media (min-width: 1350px) {
-    .nav-bar-mobile {
+    .nav-bar-mobile, #mobile-contact-info {
         display: none;
     }
-    #mobile-contact-info {
-        display: none;
-    }
-
 }
 
-h1 {
-    text-align: center;
-}
+
 

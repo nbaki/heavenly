@@ -23,7 +23,7 @@
                         'container'       => 'div',
                         'container_class' => '',
                         'container_id'    => '',
-                        'menu_class'      => 'menu',
+                        'menu_class'      => 'footer_menu',
                         'menu_id'         => '',
                         'echo'            => true,
                         'fallback_cb'     => 'wp_page_menu',

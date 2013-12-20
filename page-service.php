@@ -60,7 +60,8 @@ get_header();
                                 <tr class="even-row">
                                     <td>
                                         <div>
-                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-design-map_350x226.png" />
+                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-design-map_350x226.png" title="Kind Technology Web Design"
+                                                 alt="Kind Technology Web Design"/>
                                         </div>
                                     </td>
                                     <td id="design">
@@ -75,7 +76,8 @@ get_header();
                                 <tr class="even-row">
                                     <td>
                                         <div>
-                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-development-collage_350x233.png" />
+                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/web-development-collage_350x233.png" title="Kind Technology Development"
+                                                 alt="Kind Technology Development"/>
                                         </div>
                                     </td>
                                     <td id="dev">
@@ -90,7 +92,8 @@ get_header();
                                 <tr class="even-row">
                                     <td>
                                         <div>
-                                            <img class="service-img" width="100%" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/marketing-touch_300x200_WEB.png" />
+                                            <img class="service-img" width="100%" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/marketing-touch_300x200_WEB.png" title="Kind Technology Marketing"
+                                                 alt="Kind Technology Marketing"/>
                                         </div>
                                     </td>
                                     <td id="branding">
@@ -105,7 +108,8 @@ get_header();
                                 <tr class="even-row">
                                     <td>
                                         <div>
-                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/globe_hosting_300x248.png" />
+                                            <img class="service-img" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/globe_hosting_300x248.png" title="Kind Technology Hosting"
+                                                 alt="Kind Technology Hosting"/>
                                         </div>
                                     </td>
                                     <td id="hosting">

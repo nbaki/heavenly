@@ -57,7 +57,6 @@ h1:not(#contact-title) {
 /* Main page and content containers */
 
 .page-container {
-    /*background: #8c8c8c;*/
     background-size: cover;
 }
 .content-container {
@@ -94,20 +93,6 @@ a.content-link:visited {
 	font-weight: bold;
 }
 
-/* List Items */
-
-ul.checklist li p {
-	margin-left: 20px;
-}
-
-img#checklist-wrap {
-	float: right;	
-	padding: 0;
-	max-width: 100%;
-	margin: 5px;
-	display: inline;
-}
-
 /* SERVICES PAGE
  ============================================
  */
@@ -118,7 +103,6 @@ table.service-table tr {
 .left-content, .right-content {
     font-size: 30px;
     padding: 20px;
-    /*border: 1px solid green;*/
 }
 
 .left-content h4, .right-content h4 {
@@ -172,7 +156,6 @@ table.service-table tr {
     height: auto;
     font-size: 14px;
     text-align: center;
-    /*background-color: black;*/
 }
 
 .nav > li {
@@ -217,12 +200,6 @@ table.service-table tr {
     height: 50px;
 }
 
-.footer-logo {
-    float: left;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .footer-nav ul li {
     margin-right: 4px;
     display: inline;
@@ -232,9 +209,6 @@ table.service-table tr {
     text-decoration: underline;
     font-size: 14px;
     padding: 2px;
-}
-.nav-area-footer {
-    width: 200px;
 }
 
 .footer-table {
@@ -258,8 +232,11 @@ table.service-table tr {
 
 .breadcrumbs a {
     display: inline;
-    /*width: 200px;*/
 }
+
+/* MEDIA QUERIES
+============================================================
+*/
 
 @media (max-width: 1000px) {
     #process-flow, #checklist-guy, .nav-area, #last-logo {
@@ -324,6 +301,3 @@ table.service-table tr {
         display: none;
     }
 }
-
-
-

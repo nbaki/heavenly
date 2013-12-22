@@ -2,20 +2,11 @@
 <div class="container">
 <div class="row-fluid">
 <div class="header">
-<!--<div class="span0 social-media-footer">-->
-<!--</div>-->
-<!--<div class="span0 logo-area-footer">-->
-<!--<!--    <div class="footer-logo"><a class="logo" href="--><?php ////echo esc_url(home_url('/')); ?><!--<!--">--><?php ////heavenly_logo(); ?><!--<!--</a></div>-->
-<!---->
-<?php //if(!dynamic_sidebar('footer2')) echo ""; ?>
-<!--</div>-->
 <div class="span0">
     <div class="footer-section">
         <table class="footer-table">
             <tr>
-                <td>
-<!--                    --><?php //if(!dynamic_sidebar('footer1')) echo ""; ?>
-                </td>
+
                 <td class="footer-nav"><?php
                     $args = array(
                         'theme_location'  => '',
@@ -47,21 +38,10 @@
     </div>
 <?php if(!dynamic_sidebar('footer3')) echo ""; ?>
 </div>
-<!--<div class="span3">-->
-<?php //if(!dynamic_sidebar('footer4')) echo ""; ?>
-<!--</div>-->
 <div class="clear"></div>
 </div>
 </div> 
 </div>
-<!--<div class="buttom">-->
-<!--<div class="container"><div class="content">Copyright &copy; --><?php //echo heavenly_get_theme_opts('footer_text', get_bloginfo('sitename')); ?><!--</div></div>-->
-<!--</div>-->
 </div>
- 
-<?php //wp_footer(); ?>
-
-
-
 </body>
 </html>

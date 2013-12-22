@@ -20,13 +20,15 @@
         $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         $('.nav:last').append("<li id='last-logo'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>" );
 
-        $('#mobile-nav-button').click(function () {
-            var nav_display = $('.nav').css('display');
-            if (nav_display == 'none') {
-                $('.nav').show();
-            } else {
-                $('.nav').hide();
-            }
+        $('#mobile-nav-button-minus').click(function () {
+            $('.nav').hide();
+            $('#mobile-nav-button-plus').show();
+            $('#mobile-nav-button-minus').hide();
+        });
+        $('#mobile-nav-button-plus').click(function () {
+            $('.nav').show();
+            $('#mobile-nav-button-minus').show();
+            $('#mobile-nav-button-plus').hide();
         });
     });
 </script>
@@ -36,7 +38,8 @@
 
 <div class="nav-bar">
 <div class="btn-navbar">
-    <a id="mobile-nav-button" href="#"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/greenbuttonlines.png" alt="Mobile Navigation" /></a>
+    <a id="mobile-nav-button-minus" href="#"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Minusgreen_button.gif" alt="Mobile Navigation" /></a>
+    <a id="mobile-nav-button-plus" href="#" style="display: none;"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Plusgreen_button.gif" alt="Mobile Navigation" </a>
 </div>
     <?php
 

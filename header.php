@@ -19,7 +19,9 @@
     $(document).ready(function() {
         $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         $('.nav:last').append("<li id='last-logo'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>" );
-
+        $('img').bind('contextmenu', function(e) {
+            return false;
+        });
         $('#mobile-nav-button-minus').click(function () {
             $('.nav').hide();
             $('#mobile-nav-button-plus').show();
@@ -35,6 +37,9 @@
  <header id="banner-header">
     <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services" width="100%" />
  </header>
+<header id="banner-header-mobile">
+    <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/mobile_banner.png" alt="Kind Technology Services" width="100%" />
+</header>
 
 <div class="nav-bar">
 <div class="btn-navbar">

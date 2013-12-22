@@ -266,6 +266,13 @@ table.service-table tr {
         display: none;
     }
 }
+
+@media (min-width: 700px) {
+    #banner-header-mobile {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .btn-navbar {
         clear: both;
@@ -274,7 +281,7 @@ table.service-table tr {
         text-align: center;
         display: block;
     }
-    #mobile-checklist-guy {
+    #mobile-checklist-guy, #banner-header-mobile {
         display: block;
     }
     #mobile-process-flow {
@@ -295,6 +302,9 @@ table.service-table tr {
     .nav > li > a {
         display: block;
         padding: 2px;
+    }
+    #banner-header {
+        display: none;
     }
 }
 @media (max-width: 1350px) {

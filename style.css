@@ -23,8 +23,8 @@ h1:not(#contact-title) {
  ================================
  */
 
-@media (min-width: 1000px) {
-    #mobile-process-flow, #mobile-checklist-guy, .mobile-tiles, #service-content-mobile, .btn-navbar {
+@media (min-width: 979px) {
+    #mobile-process-flow, #mobile-checklist-guy, .mobile-services, #service-content-mobile, .btn-navbar {
         display: none;
     }
 }
@@ -39,12 +39,12 @@ h1:not(#contact-title) {
 }
 
 @media (max-width: 979px) {
-    .mobile-tiles {
+    .mobile-services {
         list-style-type: none;
         text-align: center;
         display: block;
     }
-    .mobile-tiles > li {
+    .mobile-services > li {
         padding: 5px;
     }
 
@@ -96,24 +96,20 @@ a.content-link:visited {
 /* SERVICES PAGE
  ============================================
  */
-table.service-table tr {
-    border-bottom: 1px solid #65d615;
-}
 
 .left-content, .right-content {
     font-size: 30px;
     padding: 20px;
 }
 
-.left-content h4, .right-content h4 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+.right-content h4 {
     color: #ffffff;
     background-color: #196063;
     text-align: center;
     padding: 10px;
 }
 
-.left-content p, .right-content p {
+.right-content p {
     font-size: 15px;
 }
 
@@ -245,7 +241,7 @@ table.service-table tr {
 }
 
 @media (min-width: 700px) {
-    #banner-header-mobile {
+    #banner-header-mobile, #mobile-contact-info {
         display: none;
     }
 }
@@ -258,19 +254,6 @@ table.service-table tr {
         text-align: center;
         display: block;
     }
-    #mobile-checklist-guy, #banner-header-mobile {
-        display: block;
-    }
-    #mobile-process-flow {
-        text-align: center;
-        display: block;
-    }
-    .nav-bar {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
     .nav > li {
         display: block;
         padding: 0;
@@ -280,11 +263,11 @@ table.service-table tr {
         display: block;
         padding: 2px;
     }
-    #banner-header {
-        display: none;
+    .nav-bar {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
-}
-@media (max-width: 1350px) {
     #contact-info {
         width: auto;
         display: none;
@@ -294,10 +277,30 @@ table.service-table tr {
     }
     #mobile-contact-info {
         display: block;
+        float: left;
+    }
+
+    #mobile-checklist-guy, #banner-header-mobile {
+        display: block;
+    }
+    #mobile-process-flow {
+        text-align: center;
+        display: block;
+    }
+
+    #banner-header {
+        display: none;
     }
 }
-@media (min-width: 1350px) {
-    .nav-bar-mobile, #mobile-contact-info {
+@media (min-width: 701px) and (max-width: 1200px) {
+    .btn-navbar {
         display: none;
+    }
+    .nav-bar {
+        text-align: center;
+        width: 100%;
+    }
+    .nav > li > a {
+        font-size: 12px;
     }
 }

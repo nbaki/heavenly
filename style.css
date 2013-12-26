@@ -241,7 +241,7 @@ a.content-link:visited {
 }
 
 @media (min-width: 700px) {
-    #banner-header-mobile, #mobile-contact-info {
+    #banner-header-mobile, #mobile-contact-info, #mobile-nav-button-plus, #mobile-nav-button-minus {
         display: none;
     }
 }
@@ -254,6 +254,7 @@ a.content-link:visited {
         text-align: center;
         display: block;
     }
+    .nav { display: none; }
     .nav > li {
         display: block;
         padding: 0;

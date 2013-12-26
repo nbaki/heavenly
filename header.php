@@ -22,15 +22,22 @@
         $('img').bind('contextmenu', function(e) {
             return false;
         });
-        $('#mobile-nav-button-minus').click(function () {
-            $('.nav').hide();
-            $('#mobile-nav-button-plus').show();
-            $('#mobile-nav-button-minus').hide();
-        });
-        $('#mobile-nav-button-plus').click(function () {
-            $('.nav').show();
-            $('#mobile-nav-button-minus').show();
-            $('#mobile-nav-button-plus').hide();
+
+        $(window).resize(function() {
+            if ($(window).width() <= 700) {
+                $('#mobile-nav-button-minus').click(function () {
+                    $('.nav').hide();
+                    $('#mobile-nav-button-plus').show();
+                    $('#mobile-nav-button-minus').hide();
+                });
+                $('#mobile-nav-button-plus').click(function () {
+                    $('.nav').show();
+                    $('#mobile-nav-button-minus').show();
+                    $('#mobile-nav-button-plus').hide();
+                });
+            } else {
+                $('.nav').show();
+            }
         });
     });
 </script>
@@ -43,8 +50,8 @@
 
 <div class="nav-bar">
 <div class="btn-navbar">
-    <a id="mobile-nav-button-minus" href="#"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Minusgreen_button.gif" alt="Mobile Navigation" /></a>
-    <a id="mobile-nav-button-plus" href="#" style="display: none;"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Plusgreen_button.gif" alt="Mobile Navigation" </a>
+    <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Minusgreen_button.gif" alt="Mobile Navigation" /></a>
+    <a id="mobile-nav-button-plus" href="#"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Plusgreen_button.gif" alt="Mobile Navigation" </a>
 </div>
     <?php
 

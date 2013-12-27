@@ -7,34 +7,7 @@ get_header();
 ?>
     <script>
         $(document).ready(function(){
-            $('.mark-link').click(function() {
-                $('.services').hide();
-                $('#service-content-mobile').css('border-top', '1px solid black');
-                $('#service-content-mobile').css('border-bottom', '1px solid black');
-                $('#marketing-content').show();
-                return false;
-            });
-            $('.host-link').click(function() {
-                $('.services').hide();
-                $('#service-content-mobile').css('border-top', '1px solid black');
-                $('#service-content-mobile').css('border-bottom', '1px solid black');
-                $('#hosting-content').show();
-                return false;
-            });
-            $('.design-link').click(function() {
-                $('.services').hide();
-                $('#service-content-mobile').css('border-top', '1px solid black');
-                $('#service-content-mobile').css('border-bottom', '1px solid black');
-                $('#design-content').show();
-                return false;
-            });
-            $('.dev-link').click(function() {
-                $('.services').hide();
-                $('#service-content-mobile').css('border-top', '1px solid black');
-                $('#service-content-mobile').css('border-bottom', '1px solid black');
-                $('#dev-content').show();
-                return false;
-            });
+            setMobileServicePageLinks();
         });
     </script>
     <div class="page-container">
@@ -44,7 +17,7 @@ get_header();
                     <div  id="single-post post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="entry-content">
                             <div id="search-bar-area">
-                                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+                                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Widget Area') ) : ?>
                                 <?php endif; ?>
                             </div>
                             <h1 class="entry-title"><?php the_title(); ?></h1>

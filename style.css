@@ -19,6 +19,13 @@ h1:not(#contact-title) {
 }
 
 
+/* IMAGES
+============
+*/
+.banner {
+    width: 100%;
+}
+
 /* MOBILE LAYOUTS
  ================================
  */
@@ -292,6 +299,7 @@ a.content-link:visited {
     #banner-header {
         display: none;
     }
+
 }
 @media (min-width: 701px) and (max-width: 1200px) {
     .btn-navbar {

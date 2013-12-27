@@ -20,7 +20,6 @@ get_header();
     <script>
         $(document).ready(function () {
             $('.content-container').css("background", "url('http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Greenleaves_Right_opactity.png')");
-//            $().css();
         });
     </script>
 <?php endif; ?>
@@ -33,7 +32,7 @@ get_header();
         }?>
         <?php if (!is_page('Home')) : ?>
             <div id="search-bar-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Widget Area') ) : ?>
                 <?php endif; ?>
             </div>
         <?php endif; ?>
@@ -46,7 +45,7 @@ get_header();
 
 
 <div class="span12">
-<div  id="single-post post-<?php the_ID(); ?>" <?php post_class(); ?>> 
+<div  id="single-post_post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php 
 
 while(have_posts()): the_post(); ?>

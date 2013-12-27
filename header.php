@@ -1,5 +1,5 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<!DOCTYPE HTML>
+<html <?php language_attributes(); ?>>
 <head>
  <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" >
 <title><?php wp_title(); ?></title>
@@ -12,46 +12,27 @@
         });
     </script>
     <script src="<?php echo get_childTheme_url(); ?>/scripts/jquery-1.3.2.min.js" type="text/javascript" ></script>
-<?php wp_head(); ?>
+    <script src="<?php echo get_childTheme_url(); ?>/scripts/heavenly.js" type="text/javascript" ></script>
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <script>
     $(document).ready(function() {
-        $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
-        $('.nav:last').append("<li id='last-logo'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/kts_official.jpg' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>" );
-        $('img').bind('contextmenu', function(e) {
-            return false;
-        });
-
-        $(window).resize(function() {
-            if ($(window).width() <= 700) {
-                $('#mobile-nav-button-minus').click(function () {
-                    $('.nav').hide();
-                    $('#mobile-nav-button-plus').show();
-                    $('#mobile-nav-button-minus').hide();
-                });
-                $('#mobile-nav-button-plus').click(function () {
-                    $('.nav').show();
-                    $('#mobile-nav-button-minus').show();
-                    $('#mobile-nav-button-plus').hide();
-                });
-            } else {
-                $('.nav').show();
-            }
-        });
+        setHeaderDefaults();
+        setMobileNavigation();
     });
 </script>
  <header id="banner-header">
-    <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services" width="100%" />
+    <img class="banner" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services" />
  </header>
 <header id="banner-header-mobile">
-    <img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/mobile_banner.png" alt="Kind Technology Services" width="100%" />
+    <img class="banner" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/mobile_banner.png" alt="Kind Technology Services" />
 </header>
 
 <div class="nav-bar">
 <div class="btn-navbar">
     <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Minusgreen_button.gif" alt="Mobile Navigation" /></a>
-    <a id="mobile-nav-button-plus" href="#" ><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Plusgreen_button.gif" alt="Mobile Navigation" </a>
+    <a id="mobile-nav-button-plus" href="#" ><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Plusgreen_button.gif" alt="Mobile Navigation" /></a>
 </div>
     <?php
 

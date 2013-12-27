@@ -16,14 +16,12 @@ function getPageContent($id) {
 
 if (function_exists('register_sidebar')) {
     register_sidebar(array(
-        'name' => 'Navigation Widget Area',
+        'name' => 'Content Widget Area',
         'id'   => 'nav-widgets',
-        'description'   => 'Navigation Widget Area',
+        'description'   => 'Content Widget Area',
         'before_widget' => '<div class="nav-widget">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2>',
         'after_title'   => '</h2>'
     ));
 }
-
-?>

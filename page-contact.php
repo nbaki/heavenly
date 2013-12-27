@@ -15,7 +15,7 @@ get_header();
                 }?>
             </div>
             <div id="search-bar-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Navigation Widget Area') ) : ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Widget Area') ) : ?>
                 <?php endif; ?>
             </div>
             <div class="row-fluid">

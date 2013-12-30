@@ -65,3 +65,11 @@ function setMobileServicePageLinks() {
         return false;
     });
 }
+
+function removeLinks() {
+
+    $('.service-image > a').attr('title', 'Kind Technology Services').click(function() {
+       return false;
+    });
+
+}

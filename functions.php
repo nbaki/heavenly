@@ -25,3 +25,8 @@ if (function_exists('register_sidebar')) {
         'after_title'   => '</h2>'
     ));
 }
+
+function getPermalinkForPage($page_title) {
+    $page = get_page_by_title($page_title);
+    return get_permalink($page->ID);
+}

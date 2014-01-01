@@ -18,21 +18,23 @@
 <body <?php body_class(); ?>>
 <script>
     $(document).ready(function() {
+        $('.nav:first').prepend("<li><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
+        $('.nav:last').append("<li id='last-logo'><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         setHeaderDefaults();
         setMobileNavigation();
     });
 </script>
  <header id="banner-header">
-    <img class="banner" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/banner_FINAL.png" alt="Kind Technology Services" />
+    <img class="banner" src="<?php echo wp_get_attachment_url(267); ?>" alt="Kind Technology Services" />
  </header>
 <header id="banner-header-mobile">
-    <img class="banner" src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/mobile_banner.png" alt="Kind Technology Services" />
+    <img class="banner" src="<?php echo wp_get_attachment_url(341); ?>" alt="Kind Technology Services" />
 </header>
 
 <div class="nav-bar">
 <div class="btn-navbar">
-    <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Minusgreen_button.gif" alt="Mobile Navigation" /></a>
-    <a id="mobile-nav-button-plus" href="#" ><img src="http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Plusgreen_button.gif" alt="Mobile Navigation" /></a>
+    <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation" /></a>
+    <a id="mobile-nav-button-plus" href="#" ><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation" /></a>
 </div>
     <?php
 

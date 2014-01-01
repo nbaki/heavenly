@@ -1,6 +1,4 @@
 function setHeaderDefaults() {
-    $('.nav:first').prepend("<li><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/KTS_TM_updated.png' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
-    $('.nav:last').append("<li id='last-logo'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/KTS_TM_updated.png' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
     $('img').bind('contextmenu', function (e) {
         return false;
     });

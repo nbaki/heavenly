@@ -7,19 +7,19 @@ get_header();
 <?php if (is_page('Client Checklist')) : ?>
     <script>
         $(document).ready(function () {
-            $('#checklist-opening').after("<div id='mobile-process-flow'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/checklist-guy_400x359.png' alt='checklist-guy' /><p class='wp-caption-text'>Have you checked everything?</p></div>");
+            $('#checklist-opening').after("<div id='mobile-process-flow'><img src='<?php echo wp_get_attachment_url(249); ?>' alt='checklist-guy' /><p class='wp-caption-text'>Have you checked everything?</p></div>");
         });
     </script>
 <?php elseif (is_page('Our Process')) : ?>
     <script>
         $(document).ready(function () {
-            $('#process-opening').before("<div id='mobile-process-flow' style='clear: both;'><img src='http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/process-flow.jpg' alt='process-flow' width='200' height='300' /></div>");
+            $('#process-opening').before("<div id='mobile-process-flow' style='clear: both;'><img src='<?php echo wp_get_attachment_url(252); ?>' alt='process-flow' width='200' height='300' /></div>");
         });
     </script>
 <?php elseif(is_page('About Us')) : ?>
     <script>
         $(document).ready(function () {
-            $('.content-container').css("background", "url('http://sourendev.scilsnet.rutgers.edu/wp/wp-content/uploads/2013/12/Greenleaves_Right_opactity.png')");
+            $('.content-container').css("background", "url('<?php echo wp_get_attachment_url(312); ?>')");
         });
     </script>
 <?php endif; ?>

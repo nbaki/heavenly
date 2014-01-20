@@ -31,10 +31,7 @@ get_header();
             bcn_display();
         }?>
         <?php if (!is_page('Home')) : ?>
-            <div id="search-bar-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Widget Area') ) : ?>
-                <?php endif; ?>
-            </div>
+	        <div id="search-form"><?php get_search_form(); ?></div>
         <?php endif; ?>
     </div>
 

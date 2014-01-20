@@ -30,3 +30,5 @@ function getPermalinkForPage($page_title) {
     $page = get_page_by_title($page_title);
     return get_permalink($page->ID);
 }
+
+add_theme_support('html5', array('search-form'));

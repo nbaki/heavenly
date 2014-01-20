@@ -32,10 +32,10 @@
 </header>
 
 <div class="nav-bar">
-<div class="btn-navbar">
-    <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation" /></a>
-    <a id="mobile-nav-button-plus" href="#" ><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation" /></a>
-</div>
+    <div class="btn-navbar">
+        <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation" /></a>
+        <a id="mobile-nav-button-plus" href="#" ><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation" /></a>
+    </div>
     <?php
 
 
@@ -50,8 +50,9 @@
 
 
     wp_nav_menu($args);
-
-
+    if (is_page('Home')) {
+        get_search_form();
+    }
     ?>
 </div>
 <?php

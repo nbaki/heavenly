@@ -16,9 +16,8 @@ get_header();
                 <div class="span12">
                     <div  id="single-post post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="entry-content">
-                            <div id="search-bar-area">
-                                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Widget Area') ) : ?>
-                                <?php endif; ?>
+                            <div id="search-form">
+                                <?php get_search_form(); ?>
                             </div>
                             <h1 class="entry-title"><?php the_title(); ?></h1>
                             <div class="mobile-services">

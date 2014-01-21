@@ -13,11 +13,11 @@ get_header();
                 {
                     bcn_display();
                 }?>
+                <div id="search-form">
+                    <?php get_search_form(); ?>
+                </div>
             </div>
-            <div id="search-bar-area">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Content Widget Area') ) : ?>
-                <?php endif; ?>
-            </div>
+
             <div class="row-fluid">
                 <div class="span12">
                     <div  id="single-post post-<?php the_ID(); ?>" <?php post_class(); ?>>

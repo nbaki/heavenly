@@ -1,4 +1,11 @@
 <?php
+//var_dump(curPageURL());exit;
+if (strpos($_SERVER['SERVER_NAME'], 'sourendev') !== false) {
+    error_reporting(E_ALL);
+} else {
+    error_reporting(0);
+}
+
 add_filter('show_admin_bar', '__return_false');
 function get_childTheme_url() {
     return dirname( get_bloginfo('stylesheet_url') );

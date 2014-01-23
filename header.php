@@ -50,9 +50,10 @@
 
 
     wp_nav_menu($args);
-    if (is_page('Home')) {
-        get_search_form();
-    }
+    if (is_page('Home')) { ?>
+
+        <div id="search-form"><?php get_search_form(); ?></div>
+    <?php }
     ?>
 </div>
 <?php

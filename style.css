@@ -210,7 +210,7 @@ a.content-link:visited {
 
 .footer_menu > li > a {
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 11px;
     padding: 2px;
 }
 
@@ -244,6 +244,15 @@ a.content-link:visited {
 @media (max-width: 1000px) {
     #process-flow, #checklist-guy, .nav-area, #last-logo {
         display: none;
+    }
+    #socialmedia-container {
+        display: block !important;
+    }
+    #socialmedia-container DIV.smc_icon_container:last-child {
+        margin: 0 8px 10px !important;
+    }
+    #socialmedia-container div.smc_icon_container {
+        width: auto;
     }
 }
 
@@ -370,3 +379,10 @@ a.content-link:visited {
 }
 .search-submit {display: none;}
 
+/* SOCIAL MEDIA LINKS
+=================================
+*/
+
+#socialmedia-container {
+    height: 25px !important;
+}

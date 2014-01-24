@@ -3,6 +3,7 @@ Theme Name:     child_heavenly
 Description:    Child theme of Heavely WordPress theme.
 Author:         Nasem Baki
 Template:       heavenly
+Version:        1.0.0
 
 (optional values you can add: Theme URI, Author URI, Version)
 */
@@ -263,6 +264,13 @@ a.content-link:visited {
 }
 
 @media (max-width: 700px) {
+
+    #socialmedia-container div.smc_icon_container {
+        width: 20px;
+    }
+
+    /* NAVIGATION AREA */
+
     .btn-navbar {
         clear: both;
         margin-top: 10px;
@@ -285,6 +293,8 @@ a.content-link:visited {
         margin-right: auto;
         text-align: center;
     }
+    /*===========================*/
+
     #contact-info {
         width: auto;
         display: none;

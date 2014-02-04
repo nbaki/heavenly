@@ -42,7 +42,7 @@
     $args = array(
         'theme_location' => 'primary',
         'depth' => 3,
-        'container' => false,
+        'container' => 'div',
         'menu_class' => 'nav',
         'fallback_cb' => false,
         'walker' => new heavenly_bootstrap_walker_nav_menu()

@@ -71,3 +71,11 @@ function removeLinks() {
     });
 
 }
+
+function activateItem(t){
+    if(prevItem != null){
+        prevItem.className = prevItem.className.replace(/{\b}?activeItem/, "");
+    }
+    t.className += " activeItem";
+    prevItem = t;
+}

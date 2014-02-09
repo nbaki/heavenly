@@ -22,6 +22,7 @@
         $('.nav:last').append("<li id='last-logo'><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         setHeaderDefaults();
         setMobileNavigation();
+
     });
 </script>
  <header id="banner-header">
@@ -32,13 +33,29 @@
 </header>
 
 <div class="nav-bar">
+
     <div class="btn-navbar">
         <a id="mobile-nav-button-minus" href="#" style="display: none;"><img src="<?php echo wp_get_attachment_url(337); ?>" alt="Mobile Navigation" /></a>
         <a id="mobile-nav-button-plus" href="#" ><img src="<?php echo wp_get_attachment_url(336); ?>" alt="Mobile Navigation" /></a>
     </div>
+
+    <div class="tab_nav">
+
+        <ul class="tabs">
+            <li class="logo"><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50' />
+            </li>
+            <li><a class="menu_link" href="/wp/home">Home</a></li>
+            <li><a class="menu_link" href="/wp/about-us">About Us</a></li>
+            <li><a class="menu_link" href="/wp/services">Services</a></li>
+            <li><a class="menu_link" href="/wp/our-process">Our Process</a></li>
+            <li><a class="menu_link" href="/wp/contact-us">Contact Us</a></li>
+            <li class="logo"><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50' />
+            </li>
+        </ul>
+    </div>
     <?php
 
-
+/*
     $args = array(
         'theme_location' => 'primary',
         'depth' => 3,
@@ -49,7 +66,7 @@
     );
 
 
-    wp_nav_menu($args);
+    wp_nav_menu($args); */
     ?>
 </div>
 <?php

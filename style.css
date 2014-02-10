@@ -396,3 +396,8 @@ a.content-link:visited {
 #socialmedia-container {
     height: 25px !important;
 }
+
+#banner-header {
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -20,12 +20,12 @@
     $(document).ready(function() {
         $('.nav:first').prepend("<li><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
         $('.nav:last').append("<li id='last-logo'><img src='<?php echo wp_get_attachment_url(353); ?>' title='Kind Technology Services' alt='Kind Technology Services' width='30' height='50'></li>");
-        setHeaderDefaults();
+        //setHeaderDefaults();
         setMobileNavigation();
     });
 </script>
  <header id="banner-header">
-    <img class="banner" src="<?php echo wp_get_attachment_url(267); ?>" alt="Kind Technology Services" />
+    <img class="banner" src="<?php echo wp_get_attachment_url(378); ?>" alt="Kind Technology Services" />
  </header>
 <header id="banner-header-mobile">
     <img class="banner" src="<?php echo wp_get_attachment_url(341); ?>" alt="Kind Technology Services" />
